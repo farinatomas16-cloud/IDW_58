@@ -32,3 +32,28 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+/* Estilo  la sección de Obras Sociales */
+.obras-sociales-titulo {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 24px;
+  color: #052387b5;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #111211;
+  padding-bottom: 5px;
+}
+
+.obras-sociales-lista {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.obras-sociales-lista li {
+  background-color: #ecf0f1;
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0e0e0eaf;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
