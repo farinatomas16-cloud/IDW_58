@@ -5,55 +5,73 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
-}
-
-nav ul {
-  list-style: none;
+.encabezado-consultorio {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+.logo-consultorio {
+  width: 300px;
+  height: auto;
+  margin-right: 15px;
 }
 
-main {
-  padding: 20px;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Estilo  la sección de Obras Sociales */
-.obras-sociales-titulo {
+.titulo-consultorio {
   font-family: 'Segoe UI', sans-serif;
-  font-size: 24px;
-  color: #052387b5;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #111211;
-  padding-bottom: 5px;
+    text-align: left;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+  padding-left: 2rem;
+
 }
 
-.obras-sociales-lista {
-  list-style-type: none;
-  padding-left: 0;
+
+.col:hover {
+  background-color: #b2dee2;
+  cursor: pointer;
+  padding: 40px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  text-align: center;
+  
 }
 
-.obras-sociales-lista li {
-  background-color: #ecf0f1;
-  margin: 6px 0;
+.nav-link {
+  color: #151414;
+  background-color: #4572ec;
   padding: 10px 15px;
   border-radius: 5px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #0e0e0eaf;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+.nav-link:hover {
+  background-color: #3722ef;
+  color: #f8f3f3;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link.active:hover{
+  background-color: #3722ef;
+  color: #f8f3f3;
+    text-decoration: none;
+}
+
+#carouselExampleControlsNoTouching {
+  max-width: 850px;
+  margin: 40px auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(1, 47, 255, 0.2);
+}
+
+.carousel-inner img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  
 }

@@ -3,108 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
     <link rel="stylesheet" href="styles/index.css">
-    <title>Clínica Leloir - Consultas Médicas</title>
+    <title> Mundo Sano</title>
+
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado 
+     
+    
+          
+ >
+    
+    
+    -->
     <header>
-        <h1>Clínica Leloir - Consultas Médicas</h1>
-        <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="informacion_institucional.html">Institución</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="#">Medicos</a></li>
-        <li><a href="#">Turnos</a></li>
-        <li><a href="#">Servicios</a></li>
-      </ul>
-    </nav>
+      <div class="encabezado-consultorio">
+  
+    <img src="imagenes_inicio/logo-consultorio.png" alt="Logo Mundo Sano" class="logo-consultorio">
+    <p class="titulo-consultorio">Mundo Sano nace con una misión clara: cuidar la salud con humanidad, ciencia y compromiso. Somos un consultorio médico que cree en el bienestar integral, en escuchar antes de diagnosticar, y en acompañar cada paso del paciente con respeto y empatía. Nuestro equipo trabaja para que cada consulta sea una experiencia de confianza, claridad y contención. Porque sanar no es solo tratar síntomas, es construir vínculos, prevenir y educar. En Mundo Sano, la salud es un derecho, y el cuidado, una vocación. Bienvenidos a un espacio donde lo importante sos vos.</p s>
+
+</div>
+
+<nav>
+<div class="container ">
+  <div class="row row-cols-4">
+        <div class="col"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></div>
+
+    <div class="col"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></div>
+    <div class="col"><a class="nav-link" href="profesionales.html">Nuestros profesionales</a></div>
+    <div class="col"><a class="nav-link" href="informacion_institucional.html">Institucional</a></div>
+ 
+  </div>
+</div>
+</nav>
+
     </header>
 
     <!-- Sección principal -->
     <main>
-        <section>
-            <h2>Atención médica ágil, segura y siempre a tu alcance</h2>
-            <p>Reserva turnos, realiza consultas iniciales y comunícate con nuestros especialistas.</p>
-        </section>
-
-        <!-- Obras sociales -->
-        <section>
-            <h2 class="obras-sociales-titulo">Obras Sociales Disponibles</h2>
-            <ul class="obras-sociales-lista">
-                <li>OSDEPYM</li>
-                <li>OMINT</li>
-                <li>Accord Salud</li>
-                <li>Sancor Salud</li>
-            </ul>
-        </section>
-
-        <!-- Profesionales -->
-        <section>
-            <h2>Nuestros Profesionales</h2>
-
-            <article>
-                <h3>Dr. Ariel Alvarez</h3>
-                <p>Especialidad: Pediatra</p>
-                <p>Obra Social: Sancor Salud</p>
-            </article>
-
-            <article>
-                <h3>Dr. José Banegas</h3>
-                <p>Especialidad: Oncólogo</p>
-                <p>Obra Social: Accord Salud</p>
-            </article>
-
-            <article>
-                <h3>Dra. Cintia Salazar</h3>
-                <p>Especialidad: Dermatóloga</p>
-                <p>Obra Social: OMINT</p>
-            </article>
-
-            <article>
-                <h3>Dr. Carlos Mazza</h3>
-                <p>Especialidad: Cardiólogo</p>
-                <p>Obra Social: OSDEPYM</p>
-            </article>
-        </section>
-
-        <!-- Servicios ofrecidos -->
-        <section>
-            <h2>Servicios ofrecidos</h2>
-            <ul>
-                <li>Atención médica las 24 horas</li>
-                <li>Consultas virtuales y presenciales</li>
-                <li>Cobertura de emergencias</li>
-                <li>Acceso a especialistas</li>
-                <li>Turnos online rápidos y fáciles</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Servicios ofrecidos</h2>
-            <ul>
-                <li>Atención médica las 24 horas</li>
-                <li>Consultas virtuales y presenciales</li>
-                <li>Cobertura de emergencias</li>
-                <li>Acceso a especialistas</li>
-                <li>Turnos online rápidos y fáciles</li>
-            </ul>
-        </section><section>
-            <h2>Servicios ofrecidos</h2>
-            <ul>
-                <li>Atención médica las 24 horas</li>
-                <li>Consultas virtuales y presenciales</li>
-                <li>Cobertura de emergencias</li>
-                <li>Acceso a especialistas</li>
-                <li>Turnos online rápidos y fáciles</li>
-            </ul>
-        </section>
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes_inicio/imagen-1.jpg" class="d-block img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes_inicio/imagen-2.jpeg" class="d-block img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes_inicio/imagen-3.jpeg" class="d-block img-fluid" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     </main>
 
     <!-- Pie de página -->
     <footer>
         <p>2025 Grupo IDW_58 - Universidad</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
