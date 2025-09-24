@@ -1,34 +1,11 @@
+/* Estilos Globales*/
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
 }
-
-.encabezado-consultorio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.logo-consultorio {
-  width: 300px;
-  height: auto;
-  margin-right: 15px;
-}
-
-.titulo-consultorio {
-  font-family: 'Segoe UI', sans-serif;
-    text-align: left;
-  font-size: 20px;
-  font-weight: 200;
-  color: #000000;
-  padding-left: 2rem;
-
-}
-
-
+/* Barra de navegacion*/
 .col:hover {
   background-color: #b2dee2;
   cursor: pointer;
@@ -60,7 +37,7 @@ body {
   color: #f8f3f3;
     text-decoration: none;
 }
-
+/* Carrusel*/
 #carouselExampleControlsNoTouching {
   max-width: 850px;
   margin: 40px auto;
@@ -74,4 +51,9 @@ body {
   width: 100%;
   object-fit: cover;
   
+}
+.card-img-top {
+  height: 100px;         /* Ajustá según tu diseño */
+  object-fit: auto;     /* Recorta la imagen sin deformarla */
+  border-radius: 1rem; /* Opcional: suaviza bordes */
 }
