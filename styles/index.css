@@ -6,37 +6,7 @@ body {
   padding: 0;
 }
 /* Barra de navegacion*/
-.col:hover {
-  background-color: #b2dee2;
-  cursor: pointer;
-  padding: 40px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-  text-align: center;
-  
-}
 
-.nav-link {
-  color: #151414;
-  background-color: #4572ec;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: medium;
-}
-
-.nav-link:hover {
-  background-color: #3722ef;
-  color: #f8f3f3;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.nav-link.active:hover{
-  background-color: #3722ef;
-  color: #f8f3f3;
-    text-decoration: none;
-}
 /* Carrusel*/
 #carouselExampleControlsNoTouching {
   max-width: 850px;
