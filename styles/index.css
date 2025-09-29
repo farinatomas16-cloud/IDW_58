@@ -27,3 +27,11 @@ body {
   object-fit: auto;     /* Recorta la imagen sin deformarla */
   border-radius: 1rem; /* Opcional: suaviza bordes */
 }
+/* Seccion de obras sociales*/
+h1.obra-sociales {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 2.15rem;
+  color: #0d0d0df0;
+  }
