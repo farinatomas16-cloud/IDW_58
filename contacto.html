@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+  <link rel="stylesheet" href="styles/contacto.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -39,11 +39,60 @@
   </div>
 </nav>
     </header>
-    <main>
-    
-  </main>
+   <main class="container mt-4">
+  <form class="custom-form" action="" method="post">
+    <!-- Nombre -->
+    <div class="form-group">
+      <label for="Nombre">Nombre:</label>
+      <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre" required>
+    </div>
+
+    <!-- Apellido -->
+    <div class="form-group">
+      <label for="Apellido">Apellido:</label>
+      <input type="text" class="form-control" id="Apellido" name="Apellido" placeholder="Ingresa tu Apellido" required>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu E-mail" required>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="form-group">
+      <label for="telefono">Número de teléfono:</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej. +54 9 3704 123456" required>
+    </div>
+
+    <!-- Área de contacto -->
+    <div class="form-group">
+      <label for="area">Área de contacto:</label>
+      <select class="form-select" id="area" name="area" required>
+        <option value="" disabled selected>Elige el área con la que deseas comunicarte</option>
+        <option value="1">Recursos Humanos</option>
+        <option value="2">Prestadores</option>
+        <option value="3">Otras consultas</option>
+      </select>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="form-group">
+      <label for="mensajes">Mensaje:</label>
+      <textarea class="form-control" name="mensajes" id="mensajes" rows="4" placeholder="Tu mensaje" required></textarea>
+    </div>
+
+    <!-- Botón -->
+    <div class="form-group text-center mt-3">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+</main>
+
+
   <footer>
     <p>&copy; 2025 - Contacto institucional</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
