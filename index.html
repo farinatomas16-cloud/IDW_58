@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
      
     <title> Mundo Sano</title>
 
@@ -16,18 +17,34 @@
 
 <!-- Barra de navegación -->
  
-<div class="container my-2">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 ">
-      <nav class="nav nav-pills justify-content-center flex-wrap">
-        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        <a class="nav-link" href="contacto.html">Contacto</a>
-        <a class="nav-link" href="profesionales.html">Nuestros Profesionales</a>
-        <a class="nav-link disabled" aria-disabled="true" href="informacion_institucional.html">Institucional</a>
-      </nav>
+<nav class="navbar navbar-expand-sm navbar-light bg-light my-2">
+  <div class="container">
+  
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="nav nav-pills flex-wrap">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profesionales.html">Nuestros Profesionales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true" href="informacion_institucional.html">Quienes somos?</a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
+
 
  
 <!-- Tarjeta de presentacion  -->
@@ -105,80 +122,40 @@
   <div class="row">
     <div class="col-12 col-sm-6  col-md-4 col-lg-3">
       <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
+        <img src="Imagenes del proyecto/imagenes_de_profesionales/OIP.webp" class="card-img-profesional" alt="Dr. López">
         <div class="card-body">
-          <h5 class="card-title">Dr. Juan López</h5>
-          <p class="card-text">Cardiólogo</p>
+          <h5 class="card-title card-title card-title-profesional">Dr. Juan López</h5>
+          <p class="card-text  card-text-profesional">Cardiólogo</p>
         </div>
         
       </div>
     </div>
     <div class="col-12 col-sm-6  col-md-4 col-lg-3">
       <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
+        <img src="Imagenes del proyecto/imagenes_de_profesionales/OIP (2).webp" class="card-img-profesional" alt="Dr. López">
         <div class="card-body">
-          <h5 class="card-title">Dr. hugo fernandez</h5>
-          <p class="card-text">Clinico</p>
+          <h5 class="card-title card-title-profesional">Dr. hugo fernandez</h5>
+          <p class="card-text card-text-profesiona">Clinico</p>
         </div>
         
       </div>
     </div>
     <div class="col-12 col-sm-6  col-md-4 col-lg-3">
       <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
+        <img src="Imagenes del proyecto/imagenes_de_profesionales/OIP (1).webp" class="card-img-profesional" alt="Dr. López">
         <div class="card-body">
-          <h5 class="card-title">Dr. Carla Gonzales</h5>
-          <p class="card-text">Ginecologia</p>
+          <h5 class="card-title card-title-profesional">Dr. Carla Gonzales</h5>
+          <p class="card-text card-text-profesional">Ginecologia</p>
         </div>
         
       </div>
     </div>
     <div class="col-12 col-sm-6  col-md-4 col-lg-3">
       <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
+        <img src="Imagenes del proyecto/imagenes_de_profesionales/doctor-1490804643Rfi.jpg" class="card-img-profesional" alt="Dr. López">
         <div class="card-body">
-          <h5 class="card-title">Dr. Hernan Rodriguez</h5>
-          <p class="card-text">psiquiatra</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col-12 col-sm-6  col-md-4 col-lg-3">
-      <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
-        <div class="card-body">
-          <h5 class="card-title">Dr. </h5>
-          <p class="card-text">Cardiólogo</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col-12 col-sm-6  col-md-4 col-lg-3">
-      <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
-        <div class="card-body">
-          <h5 class="card-title">Dr. Juan López</h5>
-          <p class="card-text">Cardiólogo</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col-12 col-sm-6  col-md-4 col-lg-3">
-      <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
-        <div class="card-body">
-          <h5 class="card-title">Dr. Juan López</h5>
-          <p class="card-text">Cardiólogo</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="col-12 col-sm-6  col-md-4 col-lg-3">
-      <div class="card ">
-        <img src="medico1.jpg" class="card-img-top" alt="Dr. López">
-        <div class="card-body">
-          <h5 class="card-title">Dr. Juan López</h5>
-          <p class="card-text">Cardiólogo</p>
+          <h5 class="card-title card-title-profesional">Dr. Hernan Rodriguez</h5>
+          <p class="card-text card-text-profesional">psiquiatra</p>
         </div>
         
       </div>
@@ -187,13 +164,13 @@
 </div>
 </section>
 <!-- Seccion de obras sociales-->
-<h1 class="obra-sociales">Obras Sociales con las que trabajamos</h1>
+<h1 class="text-center my-4">Obras Sociales con las que trabajamos</h1>
 <div class="container-fluid py-4">
   <div class="row g-4"> 
     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
 <div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/andar.jpg" class="card-img-top" alt="...">
+  <img src="Imagenes del proyecto/imagenes_obra_sociales/andar.jpg" class="card-img-top card-img-obra-sociales" alt="...">
   <div class="card-body">
     <h5 class="card-title">Andar</h5>
     <p class="card-text">Viajantes Vendedores</p>
@@ -203,75 +180,35 @@
 </div>
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
 <div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/cover-salud-logo.png" class="card-img-top" alt="...">
+  <img src="Imagenes del proyecto/imagenes_obra_sociales/cover-salud-logo.png" class="card-img-top card-img-obra-sociales" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Cover Salud</h5>
-    <p class="card-text">Red asistencial nacional</p>
+    <h5 class="card-title card-title-obras-sociales">Cover Salud</h5>
+    <p class="card-text card-title-obras-sociales">Red asistencial nacional</p>
   </div>
 </div>
 </div>
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
 <div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/elevar.png" class="card-img-top" alt="...">
+  <img src="Imagenes del proyecto/imagenes_obra_sociales/elevar.png" class="card-img-top card-img-obra-sociales" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Elevar</h5>
-    <p class="card-text">Pasteleros, Panaderos y afines</p>
+    <h5 class="card-title card-title-obras-sociales">Elevar</h5>
+    <p class="card-text card-title-obras-sociales">Pasteleros, Panaderos y afines</p>
   
   </div>
 </div>
 </div>
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
 <div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/ospit.jpg" class="card-img-top" alt="...">
+  <img src="Imagenes del proyecto/imagenes_obra_sociales/ospit.jpg" class="card-img-top card-img-obra-sociales" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Ospit</h5>
-    <p class="card-text">Obra Social Indistrial Textil</p>
+    <h5 class="card-title card-title-obras-sociales">Ospit</h5>
+    <p class="card-text card-title-obras-sociales">Obra Social Indistrial Textil</p>
     
   </div>
 </div>
 </div>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-<div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/OIP (1).webp" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ospim</h5>
-    <p class="card-text">Obra Social Industria Maderera</p>
-   
-  </div>
-</div>
-</div>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-<div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/OIP (2).webp" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ospe</h5>
-    <p class="card-text">Trabajadores petroleros</p>
-   
-  </div>
-</div>
-</div>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-<div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/OIP (3).webp" class="card-img-top" height="100%" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Femeba Salud</h5>
-    <p class="card-text">Federacion Medica BsAs</p>
-   
-  </div>
-</div>
-</div>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-<div class="card" h-100 shadow-sm>
-  <img src="Imagenes del proyecto/imagenes_obra_sociales/OIP.webp" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Osprera</h5>
-    <p class="card-text">Obra Social Personal Rural</p>
-   
-  </div>
-</div>
-</div>
  
-</div>
+ </div>
 </div>
             
 
@@ -282,6 +219,22 @@
 
     <!-- Pie de página -->
     <footer>
+
+      <section class="redes-sociales">
+  <h2 class="text-center my-4">Seguinos en nuestras redes</h2>
+  <div class="iconos-redes">
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/5491123456789" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
         <p>2025 Grupo IDW_58 - UNERU (niversidad Nacional de Entre Rios)</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

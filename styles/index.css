@@ -22,16 +22,68 @@ body {
   object-fit: cover;
   
 }
-.card-img-top {
-  height: 100px;         /* Ajustá según tu diseño */
-  object-fit: auto;     /* Recorta la imagen sin deformarla */
-  border-radius: 1rem; /* Opcional: suaviza bordes */
+
+
+/* Profesionales*/
+
+.card-img-profesional {
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* Seccion de obras sociales*/
-h1.obra-sociales {
-  font-family: 'Quicksand', sans-serif;
+
+.card-title-profesional {
+  font-weight: 600;
+  color: #2c3e50;
   text-align: center;
-  margin: 15px 0;
-  font-size: 2.15rem;
-  color: #0d0d0df0;
-  }
+}
+
+.card-text-profesional {
+  font-style: italic;
+  color: #6c757d;
+  text-align: center;
+}
+
+
+/* Seccion de obras sociales*/
+
+.card-img-obras-sociales {
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card-title-obras-sociales {
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.card-text-obras-sociales {
+  font-style: italic;
+  color: #6c757d;
+  text-align: center;
+}
+/* Redes sociales */
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.iconos-redes a {
+  font-size: 2.5rem;
+  color: #3498db;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+  transform: scale(1.2);
+  color: #1abc9c; /* Cambio de color al pasar el mouse */
+}
