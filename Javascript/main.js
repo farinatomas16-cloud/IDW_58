@@ -2,7 +2,6 @@ import { inicializarStorage, obtenerMedicos } from './storage.js';
 import { agregarMedico, eliminarMedico, modificarMedico } from './medicos.js';
 import { mostrarMedicosEnTabla } from './dom.js';
 
-// Esperar a que el DOM cargue
 document.addEventListener('DOMContentLoaded', () => {
   inicializarStorage();
   mostrarMedicosEnTabla();
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Función para mostrar alertas Bootstrap
   function mostrarAlerta(mensaje, tipo = 'success') {
+    if (!alertContainer) return;
     alertContainer.innerHTML = `
       <div class="alert alert-${tipo} alert-dismissible fade show mt-3" role="alert">
         ${mensaje}
@@ -26,28 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const campoNombre = document.getElementById('nombre');
     const campoEspecialidad = document.getElementById('especialidad');
-    const campoExperiencia = document.getElementById('experiencia');
 
     const nombre = campoNombre.value.trim();
     const especialidad = campoEspecialidad.value.trim();
-    const experiencia = Number(campoExperiencia.value);
 
-    // Validaciones básicas
-    if (!nombre || !especialidad || !experiencia || experiencia < 0) {
+    if (!nombre || !especialidad) {
       mostrarAlerta('Por favor, complete todos los campos correctamente.', 'warning');
       return;
     }
 
-    // Si el formulario está en modo edición
     if (formularioMedico.dataset.editando === 'true') {
       const idMedico = Number(formularioMedico.dataset.idEditar);
-      modificarMedico(idMedico, { nombre, especialidad, experiencia });
+      modificarMedico(idMedico, { nombre, especialidad });
       delete formularioMedico.dataset.editando;
       delete formularioMedico.dataset.idEditar;
       mostrarAlerta('Profesional actualizado correctamente.', 'info');
     } else {
-      // Modo creación
-      agregarMedico({ nombre, especialidad, experiencia });
+      agregarMedico({ nombre, especialidad });
       mostrarAlerta('Profesional agregado con éxito.', 'success');
     }
 
@@ -55,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formularioMedico.reset();
   });
 
-  // Cancelar edición (si hay un botón en el HTML)
+  // Cancelar edición
   const cancelarBtn = document.getElementById('cancelarEdicion');
   if (cancelarBtn) {
     cancelarBtn.addEventListener('click', () => {
@@ -67,10 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Elimina un médico por su ID (confirmando primero)
-   * @param {number} id - ID del médico a eliminar.
-   */
+  // Eliminar médico
   window.borrarMedico = function (id) {
     if (confirm('¿Seguro que querés eliminar este profesional?')) {
       eliminarMedico(id);
@@ -79,10 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  /**
-   * Carga los datos del médico en el formulario para editar.
-   * @param {number} id - ID del médico a editar.
-   */
+  // Editar médico
   window.editarMedico = function (id) {
     const listaMedicos = obtenerMedicos();
     const medicoSeleccionado = listaMedicos.find(m => m.id === id);
@@ -90,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('nombre').value = medicoSeleccionado.nombre;
     document.getElementById('especialidad').value = medicoSeleccionado.especialidad;
-    document.getElementById('experiencia').value = medicoSeleccionado.experiencia;
 
     formularioMedico.dataset.editando = 'true';
     formularioMedico.dataset.idEditar = id;
