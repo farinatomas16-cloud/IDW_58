@@ -3,6 +3,7 @@ import { agregarMedico, eliminarMedico, modificarMedico } from './medicos.js';
 import { mostrarMedicosEnTabla } from './dom.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+
   inicializarStorage();
   mostrarMedicosEnTabla();
 
@@ -86,4 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cancelarBtn) cancelarBtn.classList.remove('d-none');
     mostrarAlerta('Editando datos del profesional.', 'primary');
   };
+
+  // 🔍 Campo de búsqueda por nombre o especialidad
+  const inputFiltro = document.createElement('input');
+  inputFiltro.placeholder = 'Buscar por nombre o especialidad';
+  inputFiltro.className = 'form-control my-3';
+  inputFiltro.id = 'filtro-medico';
+
+  const seccionMedicos = document.querySelector('.equipo-medico');
+  if (seccionMedicos) {
+    seccionMedicos.insertBefore(inputFiltro, seccionMedicos.firstChild);
+  }
+
+  inputFiltro.addEventListener('input', () => {
+    const texto = inputFiltro.value.toLowerCase();
+    const medicos = obtenerMedicos();
+    const filtrados = medicos.filter(m =>
+      m.nombre.toLowerCase().includes(texto) ||
+      m.especialidad.toLowerCase().includes(texto)
+    );
+    mostrarMedicosEnTabla(filtrados);
+  });
+
 });
