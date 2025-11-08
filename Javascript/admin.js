@@ -4,6 +4,11 @@ if (!token) {
   alert('Acceso restringido. Iniciá sesión primero.');
   window.location.href = 'login.html';
 }
+// Función para cerrar sesión
+function cerrarSesion() {
+  sessionStorage.removeItem('token');
+  window.location.href = 'login.html';
+}
 
 // Función para listar usuarios
 function listarUsuarios() {
