@@ -1,5 +1,5 @@
-// Verificamos si el usuario está logueado
-const token = sessionStorage.getItem('token');
+// Verifica si el usuario esta logeado mediante sessionStorage
+const token = sessionStorage.getItem('token'); 
 if (!token) {
   alert('Acceso restringido. Iniciá sesión primero.');
   window.location.href = 'login.html';
