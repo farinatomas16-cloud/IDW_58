@@ -15,17 +15,26 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password })
   })
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error('Usuario o contraseña incorrectos');
+    return res.json();
+  })
   .then(data => {
     console.log('Respuesta:', data);
-   if (data.accessToken) {
-  sessionStorage.setItem('token', data.accessToken);
-  window.location.href = 'admin.html';
-}
 
+    if (data.token) {
+      // Guardamos el token de sesión
+      sessionStorage.setItem('token', data.token);
+      sessionStorage.setItem('user', JSON.stringify(data)); // opcional: guardar datos del usuario
+
+      // Redirigimos al panel de administración
+      window.location.href = 'admin.html';
+    } else {
+      alert('No se recibió token de autenticación.');
+    }
   })
   .catch(error => {
     console.error('Error en el login:', error);
-    alert('Error de conexión');
+    alert('Error en el inicio de sesión. Verifique los datos.');
   });
 });
